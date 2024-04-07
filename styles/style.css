@@ -108,6 +108,7 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__fieldset:focus {
@@ -129,6 +130,10 @@ ol {
 
 .search-form__textfield:active {
   border-color: currentColor;
+}
+
+.search-form__textfield:focus {
+  outline-style: none;
 }
 
 .search-form__checkbox-list {
@@ -177,6 +182,7 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__submit-button {
@@ -201,11 +207,6 @@ ol {
 }
 
 .content__accent {
-  font-size: 75px;
-  font-weight: 700;
-  font-family: Oswald, sans-serif;
-  text-transform: uppercase;
-  line-height: 70.5px;
   color: #545050;
 }
 
